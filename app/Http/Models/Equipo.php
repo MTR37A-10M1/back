@@ -3,14 +3,14 @@ namespace App\Http\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Cargo extends Model
+class Equipo extends Model
 {
     //
-    protected $table = 'cargo';
+    protected $table = 'equipo';
 
     public $timestamps = false;
 
     protected $fillable = [
-        'nombre'
+        'nombre', 'url'
     ];
 }
