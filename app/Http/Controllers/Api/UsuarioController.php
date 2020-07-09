@@ -39,7 +39,7 @@ class UsuarioController extends Controller
     public function login(Request $request){
         try
         {
-            $user = Usuario::where('name',$request->name)->where('password',$request->password)->first();
+            $user = Usuario::where('correo',$request->correo)->where('password',$request->password)->first();
             if($user)
             {
                 return response()->json(['status' => true, 
