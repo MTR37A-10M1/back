@@ -26,3 +26,7 @@ Route::prefix('Usuario')->group(function(){
 Route::prefix('Equipo')->group(function(){
     Route::get('all', 'Api\EquipoController@all');
 });
+
+Route::prefix('Falla')->group(function(){
+    Route::get('add', 'Api\FallaController@add');
+});
