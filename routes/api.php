@@ -29,4 +29,6 @@ Route::prefix('Equipo')->group(function(){
 
 Route::prefix('Falla')->group(function(){
     Route::post('add', 'Api\FallaController@add');
+    Route::post('update', 'Api\FallaController@update');
+    Route::get('all', 'Api\FallaController@all');
 });

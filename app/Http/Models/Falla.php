@@ -13,5 +13,15 @@ class Falla extends Model
     protected $fillable = [
         'descripcion', 'idEquipo', 'idEstado'
     ];
+
+    public function equipo()
+    {
+        return $this->belongsTo('App\Http\Models\Equipo','idEquipo','id');
+    }
+
+    public function estado()
+    {
+        return $this->belongsTo('App\Http\Models\Estado','idEstado','id');
+    }
     
 }
