@@ -28,5 +28,5 @@ Route::prefix('Equipo')->group(function(){
 });
 
 Route::prefix('Falla')->group(function(){
-    Route::get('add', 'Api\FallaController@add');
+    Route::post('add', 'Api\FallaController@add');
 });
